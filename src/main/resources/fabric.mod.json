@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "no-vulkan",
+	"version": "${version}",
+	"name": "No Vulkan",
+	"description": "Forces OpenGL by preventing Vulkan from loading",
+	"authors": [
+		"Iunius118"
+	],
+	"contact": {
+		"homepage": "https://github.com/Iunius118/no-vulkan",
+		"sources": "https://github.com/Iunius118/no-vulkan"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/no-vulkan/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"com.github.iunius118.novulkan.NoVulkan"
+		]
+	},
+	"mixins": [
+		{
+			"config": "no-vulkan.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.1",
+		"minecraft": "~26.2-",
+		"java": ">=25"
+	}
+}
